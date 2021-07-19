@@ -86,10 +86,7 @@ export default function App() {
         onErrorToast()
       }
     }
-
-    setTimeout(() => {
       onFetchArticles()
-    }, 500)
     }, [page, articlesName])
   
    useEffect(() => {
