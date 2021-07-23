@@ -3,18 +3,18 @@ import s from './ImageGallery.module.css'
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem'
 
 const ImageGallery = ({articles, handleImageClick}) => {
-    return (
-        <ul className={s.ImageGallery}>
-          {articles.map(({ id, webformatURL, largeImageURL, tags }) => (
-            <ImageGalleryItem
-              key={id}
-              webformatURL={webformatURL}
-              largeImageURL={largeImageURL}
-              tags={tags}
-              handleImageClick={handleImageClick}
-            />
+  return (
+    <ul className={s.ImageGallery}>
+      {articles.map(({ id, webformatURL, largeImageURL, tags }) => (
+        <ImageGalleryItem
+          key={id}
+          webformatURL={webformatURL}
+          largeImageURL={largeImageURL}
+          tags={tags}
+          handleImageClick={handleImageClick}
+          />
           ))}
-            </ul>
+    </ul>
         )}
 
 ImageGallery.propTypes = {
