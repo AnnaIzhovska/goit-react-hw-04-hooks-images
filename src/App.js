@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-// import {useLockBodyScroll} from 'react-use';
 import PropTypes from 'prop-types'
 import s from'./App.module.css'
 import 'react-toastify/dist/ReactToastify.css'
@@ -107,8 +106,8 @@ export default function App() {
 
   const showImageList = articles.length > 0
 
-    return (
-      <Container>
+  return (
+      <Container> 
         <Searchbar onSearch={handleFormSubmit} />
         {status === Status.IDLE && (
           <>
@@ -141,7 +140,7 @@ export default function App() {
         )}
 
         <ToastContainer autoClose={4000} />
-      </Container>
+       </Container>
     )
   }
 
